@@ -7,6 +7,13 @@
 
 // Exercício 1 — classificarIdade
 export function classificarIdade(idade) {
+  if (idade >= 18) 
+    return "adulto"
+  else if (idade >= 12 ) 
+    return "adolescente"
+  else 
+    return "criança"
+  
   // escreva seu código aqui
 }
 
