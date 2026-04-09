@@ -27,6 +27,8 @@ export function extrairNomes(alunos) {
 
 // Exercício 4 — buscarAluno
 export function buscarAluno(alunos, nome) {
+  const estudante = alunos.find(aluno => aluno.nome == nome);
+  return estudante
   // escreva seu código aqui
 }
 
