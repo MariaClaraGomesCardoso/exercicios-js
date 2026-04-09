@@ -7,11 +7,13 @@
 
 // Exercício 1 — criarSaudacao
 export function criarSaudacao(nome) {
+  return `Olá, ${nome}!`;
   // escreva seu código aqui
 }
 
 // Exercício 2 — filtrarAprovados
 export function filtrarAprovados(alunos) {
+
   // escreva seu código aqui
 }
 
