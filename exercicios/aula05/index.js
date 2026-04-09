@@ -19,6 +19,7 @@ export function classificarIdade(idade) {
 
 // Exercício 2 — calcularDesconto
 export function calcularDesconto(preco, percentual) {
+   return preco - (percentual * preco /100)
   // escreva seu código aqui
 }
 
