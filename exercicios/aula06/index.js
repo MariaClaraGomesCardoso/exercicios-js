@@ -34,5 +34,12 @@ export function buscarAluno(alunos, nome) {
 
 // Exercício 5 — calcularMedia
 export function calcularMedia(notas) {
+  let soma = 0
+  let media = 0
+  for (const num of notas){
+    soma += num;
+    media = soma / notas.length;
+  }
+  return media
   // escreva seu código aqui
 }
