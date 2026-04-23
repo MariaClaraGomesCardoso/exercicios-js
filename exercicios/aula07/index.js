@@ -7,12 +7,15 @@
 
 // Exercício 1 — objetoParaJSON
 export function objetoParaJSON(objeto) {
+  const objetoParaJSON = JSON.stringify(objeto);
+  return objetoParaJSON
   // escreva seu código aqui
 }
 
 // Exercício 2 — jsonParaObjeto
 export function jsonParaObjeto(texto) {
-  // escreva seu código aqui
+  const objeto = JSON.parce(texto);
+  return objeto
 }
 
 // Exercício 3 — clonarObjeto
