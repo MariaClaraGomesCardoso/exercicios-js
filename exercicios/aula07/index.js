@@ -14,12 +14,16 @@ export function objetoParaJSON(objeto) {
 
 // Exercício 2 — jsonParaObjeto
 export function jsonParaObjeto(texto) {
-  const objeto = JSON.parce(texto);
+  const objeto = JSON.parse(texto);
   return objeto
+  
 }
 
 // Exercício 3 — clonarObjeto
 export function clonarObjeto(objeto) {
+  const original = JSON.stringify(objeto);
+  const copia = JSON.parse(original);
+  return copia
   // escreva seu código aqui
 }
 
@@ -37,10 +41,22 @@ function simularConsulta(id) {
 
 // Exercício 4 — buscarDados
 export async function buscarDados(id) {
+  const buscarDados = simularConsulta(id);
+  return buscarDados
   // escreva seu código aqui
 }
 
 // Exercício 5 — dividirSeguro
 export async function dividirSeguro(a, b) {
+  try{
+      if (b === 0){
+        throw new Error('Divisão por zero');
+        
+      }
+      return a/b;
+  } catch (erro) {
+    console.error(erro.message);
+    throw erro;
+  }
   // escreva seu código aqui
 }
