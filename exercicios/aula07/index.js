@@ -41,7 +41,7 @@ function simularConsulta(id) {
 
 // Exercício 4 — buscarDados
 export async function buscarDados(id) {
-  const buscarDados = simularConsulta(id);
+  const buscarDados = await simularConsulta(id);
   return buscarDados
   // escreva seu código aqui
 }
