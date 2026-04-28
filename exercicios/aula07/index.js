@@ -57,6 +57,7 @@ export async function dividirSeguro(a, b) {
   } catch (erro) {
     console.error(erro.message);
     throw erro;
+    
   }
   // escreva seu código aqui
 }
